@@ -3,6 +3,6 @@ class TodoController < ApplicationController
         @todo_description = " Make the curriculum"
         @todo_promodoro_estimate = 4
     end
-    def show
+    def show1
     end
 end
