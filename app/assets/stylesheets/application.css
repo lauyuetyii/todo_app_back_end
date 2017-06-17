@@ -15,6 +15,10 @@
     border-bottom: 1px solid #CCCCCC;
   }
   
+  h2 {
+    text-align: center
+  }
+  
   ul.todo-list{
       list-style-type: none;
       padding: 0;
