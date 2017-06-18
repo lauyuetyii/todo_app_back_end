@@ -7,8 +7,8 @@
     
     <h3>Todo #<%= params[:id] %></h3>
     
-    <p2> <%= @todo_description %></p2>
-<span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo_promodoro_estimate %> Pomodoros</span>
+    <p2> <%= @todo.description %></p2>
+<span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> Pomodoros</span>
     
     <body>
         <div class="main-content">
@@ -16,7 +16,7 @@
         <h2>Make the curriculum 4 Pomodoro</h2>
         <a href="#" class="button">Edit</a>
         <a href="#" class="button botton-secondary">Delete</a>
-        <a href="index.html">Go Back</a>
+        <a href="../index.html">Go Back</a>
         </div>
     </body>
 </html>

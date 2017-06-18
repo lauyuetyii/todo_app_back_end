@@ -1,4 +1,4 @@
-<h1>Todo of The Day<h1/>
+<h1>Todo For The Day<h1/>
 
 <div class="main-content">
 <h1>June 3, 2017</h1>
@@ -19,10 +19,15 @@
 
 <hr/>
 
-<form method="get">
-<input type="text" placeholder="Add a todo...">
-<input type="number" placeholder="Pomodoro estimate...">
-<input type="submit" class="button" value="submit"></form>
+<form action="/todo/create">
+  <input class="text-input" id="new-todo-description" name="description" type="text" placeholder="Add a new todo...">
+  <input class="text-input" id="new-pomodoro-estimate" name="pomodoro-estimate" type="number" placeholder="Pomodoro estimate...">
+  <input class="button" id="add-new-todo-button" type="submit" value="Add todo">
+</form>
+
 </div>
+
+<h2>Add a new todo...</h2>
+
 
 </body>

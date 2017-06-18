@@ -6,7 +6,17 @@ class TodoController < ApplicationController
         
     end
     
+    
+    def create
+        z=Todo.new
+        z.description=params['description']
+        z.pomodoro_estimate=params['pomodoro_estimate']
+        z.save
+        redirect_to "/todo/show/#{z.id }"
+    end
+    
     def show
+        @todo = Todo.find_by_id (params[:id])
         @todo_description = " Make the curriculum"
         todo_id = params[:id]
     
@@ -27,5 +37,7 @@ class TodoController < ApplicationController
          elsif todo_id =='7'    
             @todo_description = "Have A Great Workshop"
         end
+   end     
+    def new
     end
-    end
+end
