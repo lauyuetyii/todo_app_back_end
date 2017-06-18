@@ -5,18 +5,21 @@
         <link rel="stylesheet" href="index.css">
     </head>
     
-    <h3>Todo #<%= params[:id] %></h3>
     
-    <p2> <%= @todo.description %></p2>
-<span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> Pomodoros</span>
+    
+<!--<span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> Pomodoros</span>-->
     
     <body>
         <div class="main-content">
+        <p>Todo #<%= @todo.id %></p>
+        <p><%= @todo.description %></p>
+        <p><%= @todo.pomodoro_estimate %></p>
+        
         <input type="checkbox">
-        <h2>Make the curriculum 4 Pomodoro</h2>
-        <a href="#" class="button">Edit</a>
+        <a href="/todo/edit/<%=@todo.id %>" class ="button edit-todo-button">Edit</a>
         <a href="#" class="button botton-secondary">Delete</a>
-        <a href="../index.html">Go Back</a>
+        <a href="/todo/index.html">Go Back</a>
+    
         </div>
     </body>
 </html>
